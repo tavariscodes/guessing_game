@@ -4,8 +4,8 @@ use std::cmp::Ordering;
 
 fn main() {
     println!("Guess the number!");
-    let secret_number = rand::thread_rng().gen_range(1, 101);
 
+    let secret_number = rand::thread_rng().gen_range(1, 101);
 
     loop {
     
@@ -20,7 +20,6 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };
-            
     
         println!("You guessed: {}", guess);
 
